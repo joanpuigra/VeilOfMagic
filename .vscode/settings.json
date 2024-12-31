@@ -56,5 +56,8 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "VeilOfMagic.sln"
+    "dotnet.defaultSolution": "VeilOfMagic.sln",
+    "cSpell.words": [
+        "Lerp"
+    ]
 }
