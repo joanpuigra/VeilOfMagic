@@ -12,13 +12,11 @@ public class Player : MonoBehaviour
     private float jumpForce = 5f;
 
     // Spells
-    public GameObject FireBallPrefab;
-    public Transform FireBall;
+    public GameObject bulletPrefab;
+    public Transform bulletTransform;
 
-    private float health = 100f;
-    private float mana = 100f;
-    // private List<string> spells = new List<string>();
-    // private List<string> items = new List<string>();
+    // private float health = 100f;
+    // private float mana = 100f;
 
     // Conditions
     private bool isJumping = false;
@@ -37,7 +35,6 @@ public class Player : MonoBehaviour
 
         // Player status
         PlayerStats();
-        PlayerSpells();
 
         // Player actions
         JumpPlayer();
@@ -87,12 +84,6 @@ public class Player : MonoBehaviour
         // Implement player stats logic here
     }
 
-    // ** PLAYER SPELLS **
-    private void PlayerSpells()
-    {
-        // Implement player spells logic here
-    }
-
     // ** PLAYER ACTIONS **
     private void PlayerAttack()
     {
@@ -101,18 +92,18 @@ public class Player : MonoBehaviour
             // Mouse Position
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            // FireBall Direction
-            Vector2 fireBallDirection = FireBall.position;
+            // Bullet Direction
+            Vector2 bulletDirection = bulletTransform.position;
 
-            // Set FireBall direction from mouse position
-            Vector2 direction = (mousePosition - fireBallDirection).normalized;
+            // Set Bullet direction from mouse position
+            Vector2 direction = (mousePosition - bulletDirection).normalized;
 
-            // Instantiate FireBall
-            GameObject fireBall = Instantiate(FireBallPrefab, FireBall.position, Quaternion.identity);
+            // Instantiate Bullet
+            GameObject bullet = Instantiate(bulletPrefab, bulletTransform.position, Quaternion.identity);
 
-            // Set FireBall direction
-            FireBall fb = fireBall.GetComponent<FireBall>();
-            fb.SetDirection(direction);
+            // Set Bullet direction
+            Bullet shoot = bullet.GetComponent<Bullet>();
+            shoot.SetDirection(direction);
         }
     }
 }
