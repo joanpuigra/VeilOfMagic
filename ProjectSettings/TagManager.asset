@@ -8,6 +8,8 @@ TagManager:
   - Door
   - Enemy
   - Bullet
+  - Ammo
+  - First Aid Kit
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,31 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4240709381
+    locked: 0
+  - name: Decoration
+    uniqueID: 768184473
+    locked: 0
+  - name: Floor
+    uniqueID: 977421351
+    locked: 0
+  - name: Interactable
+    uniqueID: 3722024703
+    locked: 0
+  - name: Collectable
+    uniqueID: 4288376263
+    locked: 0
+  - name: Player
+    uniqueID: 3791629347
+    locked: 0
+  - name: Bullet
+    uniqueID: 181945449
+    locked: 0
+  - name: Water
+    uniqueID: 2730636767
+    locked: 0
+  - name: Extra Decoration
+    uniqueID: 443122013
     locked: 0
