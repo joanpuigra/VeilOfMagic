@@ -436,7 +436,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 0, z: 13, w: 48}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -583,7 +583,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 13, y: 16, z: 16, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2362,10 +2362,10 @@ TextureImporter:
       name: RockyWorld_107
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 576
-        height: 448
+        x: 183
+        y: 120
+        width: 89
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2535,7 +2535,7 @@ TextureImporter:
         width: 62
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2543,6 +2543,657 @@ TextureImporter:
       bones: []
       spriteID: 75cf6094b09798f46b737ef33110dd2e
       internalID: 1406657997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_116
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 158
+        width: 130
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86581b024d42b54e9475e8ee76b3131
+      internalID: 2133742581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_117
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 213
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8ba4dbfe9b86449aac27505f7c9b57
+      internalID: 1286199475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_118
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 320
+        width: 105
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66007ee7ecb39244c9ba746a5872e9d8
+      internalID: -935750071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_119
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 122
+        width: 130
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24f484634f96140a4c13768cb097b1
+      internalID: 460625282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_120
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 320
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf0da30e7b8d9f47ae22d9180229b59
+      internalID: 1711288676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_121
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 320
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9d65e6c9a9b654f84be42ebb902d35
+      internalID: 20439876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_122
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 122
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f816c2516d83b544ad3d8ef3116b789
+      internalID: -810182990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_123
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 122
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33188b043c33a34b9dac12e333af153
+      internalID: -1564778249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_124
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 272
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1624acd0f058a4ab8f50e732ad59d4
+      internalID: 101866385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_125
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 158
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff7b612d1606e64697a4ccaaacea229
+      internalID: 1757202681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_126
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 271
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5306bdaa5f604cb47b39b81ee14651ab
+      internalID: 837862393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_127
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 240
+        width: 83
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedc37a4bde148a40b1eebb1cd0eb808
+      internalID: -1429726445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_128
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 240
+        width: 81
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3909ff251eaf44da7e80729a142b1c
+      internalID: 331164377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_129
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 208
+        width: 81
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4694f05181f44340a1e538e90adf745
+      internalID: 701363878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_130
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 158
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6049faaacdf2047824157c16aa106e
+      internalID: -2135808151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_131
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 208
+        width: 83
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2564399ef5c9940abbc85ee8876e7e
+      internalID: 1895143723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_132
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 320
+        width: 68
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b496ffea89c6640bda36fe07848d83
+      internalID: -1800606969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_133
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 122
+        width: 68
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3874e645f498748830cd74831743be
+      internalID: -1517876062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_134
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 320
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99369ebc2b97d4d4fbbc41f95be36439
+      internalID: -134242159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_135
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 320
+        width: 69
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c4c85d9e738741ad412edd44b9e25
+      internalID: 222374128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_136
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 278
+        width: 89
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 13, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13cb6890671ca34ea8e7359c555eade
+      internalID: -1734634104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_137
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 278
+        width: 89
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f00d3a28b0a9848b524e1fc7df3f2c
+      internalID: 2045031349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_138
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 121
+        width: 89
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee85c48127c22af4c860db76de0af80e
+      internalID: 1314299221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_139
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 169
+        width: 40
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273d03c598d65504099d183b13aad0a4
+      internalID: -1071447366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 170
+        width: 41
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a59636c6dad8744a24c34d465f940b
+      internalID: 538584284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_141
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 48
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e244ae16c611e41a3183f70d31d06b
+      internalID: 1300322806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_142
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df28abcfc051d04684b635c957f7d33
+      internalID: 1158728880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_143
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 362
+        width: 81
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014995afcc8eca64cba6508d11b9fecd
+      internalID: 1431795841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_144
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 362
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40102b0d932ffb41bd6f9fcd4feaaaa
+      internalID: 186341771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_145
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 176
+        width: 22
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a591c5b88d96ec49ad12b7bc08ad9b6
+      internalID: 53499095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RockyWorld_146
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 22
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e088aea3b0409ff44b04bd23349e201b
+      internalID: -732338422
       vertices: []
       indices: 
       edges: []
@@ -2578,9 +3229,40 @@ TextureImporter:
       RockyWorld_113: 1806872210
       RockyWorld_114: -1429748402
       RockyWorld_115: 1406657997
+      RockyWorld_116: 2133742581
+      RockyWorld_117: 1286199475
+      RockyWorld_118: -935750071
+      RockyWorld_119: 460625282
       RockyWorld_12: -413840477
+      RockyWorld_120: 1711288676
+      RockyWorld_121: 20439876
+      RockyWorld_122: -810182990
+      RockyWorld_123: -1564778249
+      RockyWorld_124: 101866385
+      RockyWorld_125: 1757202681
+      RockyWorld_126: 837862393
+      RockyWorld_127: -1429726445
+      RockyWorld_128: 331164377
+      RockyWorld_129: 701363878
       RockyWorld_13: -566537720
+      RockyWorld_130: -2135808151
+      RockyWorld_131: 1895143723
+      RockyWorld_132: -1800606969
+      RockyWorld_133: -1517876062
+      RockyWorld_134: -134242159
+      RockyWorld_135: 222374128
+      RockyWorld_136: -1734634104
+      RockyWorld_137: 2045031349
+      RockyWorld_138: 1314299221
+      RockyWorld_139: -1071447366
       RockyWorld_14: 1821935248
+      RockyWorld_140: 538584284
+      RockyWorld_141: 1300322806
+      RockyWorld_142: 1158728880
+      RockyWorld_143: 1431795841
+      RockyWorld_144: 186341771
+      RockyWorld_145: 53499095
+      RockyWorld_146: -732338422
       RockyWorld_15: -1647726639
       RockyWorld_16: -670713994
       RockyWorld_17: 597625519
