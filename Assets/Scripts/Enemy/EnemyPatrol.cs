@@ -1,28 +1,55 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
     public Transform[] waypoints;
     public float speed = 2f;
-    private int currentWaypoint = 0;
+    public float waitTime = 1f;
+
+    private int _currentWaypoint = 0;
+    private bool _isWaiting = false;
 
     void Update()
     {
-        Patrol();
+        if (!_isWaiting)
+        {
+            Patrol();
+        }
     }
 
     public void Patrol()
     {
-        if (waypoints.Length == 0) return;
-
-        Transform targetWaypoint = waypoints[currentWaypoint];
-        Vector2 direction = (targetWaypoint.position - transform.position).normalized;
-        transform.Translate(speed * Time.deltaTime * direction);
+        Transform targetWaypoint = waypoints[_currentWaypoint];
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            targetWaypoint.position,
+            speed * Time.deltaTime
+        );
+        
+        // Flip the sprite to face the next waypoint
+        Vector2 direction = targetWaypoint.position - transform.position;
+        if (direction.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (direction.x < 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
         
         // Check if enemy is at target point
-        if (Vector2.Distance(transform.position, targetWaypoint.position) < 0.5f)
+        if (Vector2.Distance(transform.position, targetWaypoint.position) < 0.1f)
         {
-            currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+            StartCoroutine(WaitAtWaypoint());
         }
+    }
+
+    IEnumerator WaitAtWaypoint()
+    {
+        _isWaiting = true;
+        yield return new WaitForSeconds(waitTime);
+        _currentWaypoint = (_currentWaypoint + 1) % waypoints.Length;
+        _isWaiting = false;
     }
 }

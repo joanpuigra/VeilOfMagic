@@ -17,6 +17,9 @@
 ### Tilesets
 - [Rocky World Platformer](https://assetstore.unity.com/packages/2d/environments/rocky-world-platformer-150009#content)
 - [Crystal World Platformer](https://assetstore.unity.com/packages/2d/environments/crystal-world-platformer-150016)
+- [Water+](https://ninjikin.itch.io/water)
+- [Plant Pack](https://sircatiscat.itch.io/freeplantpack)
+
 
 ## BlockBuild Assets:
 - [Scribble Platformer](https://kenney.nl/assets/scribble-platformer)

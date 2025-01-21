@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    // GameObjects
     private Animator animator;
     private Rigidbody2D rb;
     public EnemyPatrol enemyPatrol;
@@ -25,16 +24,10 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        SpawnEnemy();
-
-        // Enemy movements
+        // SpawnEnemy();
         EnemyPatrol();
-        // EnemyAnimator();
-
-        // Enemy actions
         // DetectPlayer();
-        // EnemyAttack();
-        // EnemySpecial();
+        EnemyAttack();
     }
 
     // ** ENEMY MOVEMENTS **

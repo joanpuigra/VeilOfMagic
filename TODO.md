@@ -4,10 +4,12 @@
 ## Basic
 - [x] Añadir vida y daño
 - [x] Añadir daño por impacto de bala
-- [ ] Añadir animaciones y tilemaps
+- [X] Añadir animaciones personaje
+- [ ] Decorar el mapeado
+- [ ] Añadir animaciones enemigos
 - [ ] Añadir patrulla zombie
 - [ ] Añadir persecución zombie
-- [ ] Animar un tile
+- [X] Animar un tile
 - [x] Añadir spawner enemigos
 - [ ] Añadir spawner objetos
   
