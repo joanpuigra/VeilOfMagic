@@ -1,3 +1,6 @@
+# Veil Of Magic (aka new name Deep Sorrow)
+School Project for Unity2D for a plataformer style game.
+
 # Credits
 ## Assets
 ### UI
