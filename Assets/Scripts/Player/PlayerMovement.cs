@@ -1,39 +1,42 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private static readonly int Speed = Animator.StringToHash("Speed");
+
     [Header("Movement")]
-    [SerializeField] private float _speed;
+    [SerializeField] private float _speed = 5f;
     private Animator _animator;
     private Rigidbody2D _rb;
     private Vector2 _movementInput;
-
+    private float _idleTimer;
+    public bool isDead;
+    private Player _player;
+    private PlayerClimb _playerClimb;
+    
     [Header("Jumping")]
-    [SerializeField] private float _jumpForce;
+    [SerializeField] private float _jumpForce = 10f;
     private bool _isJumping;
     private bool _isWallSliding;
-    [SerializeField] private float _wallSlidingSpeed;
+    [SerializeField] private float _wallSlidingSpeed = 2f;
     [SerializeField] private Transform _wallCheck;
+    
+    public float moveValue { get; private set; }
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _animator.SetBool("isIdle", true);
+        _playerClimb = GetComponent<PlayerClimb>();
+        _animator.SetFloat(Speed, 0f);
     }
 
     private void FixedUpdate()
     {
-        Vector2 newVelocity = _rb.velocity;
-        newVelocity.x = _movementInput.x * _speed;
-        _rb.velocity = newVelocity;
+        _rb.velocity = new Vector2(_movementInput.x * _speed, _rb.velocity.y);
         WallSlide();
-    }
-
-    private bool IsTouchingWall()
-    {
-        return Physics2D.OverlapCircle(_wallCheck.position, 0.2f);
     }
 
     private void WallSlide()
@@ -49,15 +52,46 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private bool IsTouchingWall()
+    {
+        return Physics2D.OverlapCircle(_wallCheck.position, 0.2f);
+    }
+
     private void OnJump(InputValue inputValue)
     {
-        if (inputValue.isPressed)
+        if (!inputValue.isPressed || _isJumping) return;
+
+        _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+        _isJumping = true;
+    }
+
+    private void OnMove(InputValue inputValue)
+    {
+        if (_playerClimb != null && _playerClimb.isClimbing)
         {
-            if (!_isJumping)
-            {
-                _rb.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
-                _isJumping = true;
-            }
+            moveValue = 0f;
+            return;
+        }
+
+        moveValue = Input.GetAxisRaw("Horizontal");
+        
+        if (isDead) return;
+
+        _movementInput = inputValue.Get<Vector2>();
+        moveValue = _movementInput.x;
+
+        bool isMoving = moveValue != 0f;
+
+        if (isMoving)
+        {
+            _animator.SetFloat(Speed, 0f);
+            
+            if (moveValue > 0f) { _animator.SetFloat(Speed, 1f); }
+            else if (moveValue < 0f) { _animator.SetFloat(Speed, -1f); }
+        }
+        else
+        {
+            _animator.SetFloat(Speed, 0f);
         }
     }
 
@@ -68,37 +102,4 @@ public class PlayerMovement : MonoBehaviour
             _isJumping = false;
         }
     }
-
-    private void OnMove(InputValue inputValue)
-    {
-        _movementInput = inputValue.Get<Vector2>();
-
-        if (_movementInput != Vector2.zero)
-        {
-            _animator.SetBool("isIdle", false);
-            if (_movementInput.x > 0)
-            {
-                _animator.SetBool("isWalkingRight", true);
-                // _weaponActive.SetActive(_pistolPrefabRight);
-            }
-            else if (_movementInput.x < 0)
-            {
-                _animator.SetBool("isWalkingLeft", true);
-                // _weaponActive.SetActive(_pistolPrefabLeft);
-            }
-        }
-        else
-        {
-            _animator.SetBool("isWalkingRight", false);
-            _animator.SetBool("isWalkingLeft", false);
-            _animator.SetBool("isIdle", true);
-            // _weaponActive.SetActive(false);
-        }
-    }
-
-    // private void OnDrawGizmosSelected()
-    // {
-    //     Gizmos.color = Color.red;
-    //     Gizmos.DrawWireSphere(_wallCheck.position, 0.2f);
-    // }
 }

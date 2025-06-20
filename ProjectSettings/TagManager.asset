@@ -10,6 +10,7 @@ TagManager:
   - Bullet
   - Ammo
   - First Aid Kit
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -62,15 +63,21 @@ TagManager:
   - name: Collectable
     uniqueID: 4288376263
     locked: 0
+  - name: Water
+    uniqueID: 2730636767
+    locked: 0
+  - name: Extra Decoration
+    uniqueID: 443122013
+    locked: 0
+  - name: Weapon
+    uniqueID: 987516047
+    locked: 0
   - name: Player
     uniqueID: 3791629347
     locked: 0
   - name: Bullet
     uniqueID: 181945449
     locked: 0
-  - name: Water
-    uniqueID: 2730636767
-    locked: 0
-  - name: Extra Decoration
-    uniqueID: 443122013
+  - name: UI
+    uniqueID: 2091981223
     locked: 0

@@ -20,7 +20,7 @@ public class EnemySlimeBoss : MonoBehaviour
         {
             if (hitCollider.CompareTag("Player"))
             {
-                hitCollider.GetComponent<Player>().TakeDamage(toxicGasDamage++);
+                // hitCollider.GetComponent<Player>().TakeDamage(toxicGasDamage++);
             }
         }
         Instantiate(toxicGasPrefab, transform.position, Quaternion.identity);
