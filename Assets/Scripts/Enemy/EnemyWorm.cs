@@ -9,7 +9,7 @@ public class EnemyWorm : MonoBehaviour
 
     private void Start()
     {
-        isActive = GetComponent<EnemyAttack>().isAttacking;
+        // isActive = GetComponent<EnemyAttack>().isAttacking;
     }
 
 
@@ -21,7 +21,7 @@ public class EnemyWorm : MonoBehaviour
         {
             if (hitCollider.CompareTag("Player"))
             {
-                hitCollider.GetComponent<Player>().TakeDamage(acidDamage);
+                // hitCollider.GetComponent<Player>().TakeDamage(acidDamage);
             }
         }
         Destroy(acid, 2f);

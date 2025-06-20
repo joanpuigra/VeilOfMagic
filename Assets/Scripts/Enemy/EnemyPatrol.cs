@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public Transform[] waypoints;
-    public float speed = 2f;
-    public float waitTime = 1f;
+    [SerializeField] private Transform[] waypoints;
+    [SerializeField] private float speed = 2f;
+    [SerializeField] private float waitTime = 1f;
+    
+    private int _currentWaypoint;
+    private bool _isWaiting;
 
-    private int _currentWaypoint = 0;
-    private bool _isWaiting = false;
-
-    void Update()
+    private void Update()
     {
         if (!_isWaiting)
         {
@@ -31,11 +31,11 @@ public class EnemyPatrol : MonoBehaviour
         Vector2 direction = targetWaypoint.position - transform.position;
         if (direction.x > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (direction.x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipX = true ;
         }
         
         // Check if enemy is at target point
