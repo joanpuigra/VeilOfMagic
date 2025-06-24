@@ -1,10 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class LadderZone : MonoBehaviour
 {
     private static readonly int IsClimbing = Animator.StringToHash("isClimbing");
     public GameObject climbHintUI;
-    private bool hasShownClimbHint;
     
     private void Awake()
     {
@@ -13,31 +13,39 @@ public class LadderZone : MonoBehaviour
             climbHintUI.SetActive(false);
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerClimb>().canClimb = true;
+            PlayerClimb playerClimb = collision.GetComponent<PlayerClimb>();
+            playerClimb.canClimb = true;
+            playerClimb.ladderZone = this;
             
-            if (!hasShownClimbHint && climbHintUI != null)
+            if (!playerClimb.hasShownClimbHint && climbHintUI != null)
             {
                 climbHintUI.SetActive(true);
-                hasShownClimbHint = true;
+                playerClimb.hasShownClimbHint = true;
+                StartCoroutine(FinishTutorial());
+                climbHintUI.SetActive(false);
             }        
         }
+    }
+
+    private IEnumerator FinishTutorial()
+    {
+        yield return new WaitForSeconds(5f);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            climbHintUI.SetActive(true);
-
-            PlayerClimb player = collision.GetComponent<PlayerClimb>();
-            player.canClimb = false;
-            player.isClimbing = false;
-            player.animator.SetBool(IsClimbing, false);
+            PlayerClimb playerClimb = collision.GetComponent<PlayerClimb>();
+            playerClimb.canClimb = false;
+            playerClimb.isClimbing = false;
+            playerClimb.ladderZone = null;
+            playerClimb.animator.SetBool(IsClimbing, false);
             
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
             rb.gravityScale = 1.5f;

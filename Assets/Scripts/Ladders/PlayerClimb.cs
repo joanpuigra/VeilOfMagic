@@ -12,13 +12,14 @@ public class PlayerClimb : MonoBehaviour
     public bool isClimbing;
 
     public Animator animator;
-    private LadderZone ladderZone;
+    public LadderZone ladderZone;
+    public bool hasShownClimbHint;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        ladderZone = FindObjectOfType<LadderZone>().GetComponent<LadderZone>();
+        hasShownClimbHint = false;
     }
 
     private void Update()
@@ -26,11 +27,6 @@ public class PlayerClimb : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
         isClimbing = canClimb && verticalInput != 0f;
         animator.SetBool(IsClimbing, isClimbing);
-        
-        if (isClimbing && ladderZone.climbHintUI != null)
-        {
-            ladderZone.climbHintUI.SetActive(false);
-        }
     }
 
 
